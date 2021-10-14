@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  db:
+    image: postgres
+    ports:
+      - 8080:8080
+    volumes:
+      - ./data:/var/lib/postgres
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_DATABASE=app
+      - MYSQL_USER=app
+      - MYSQL_PASSWORD=123123
