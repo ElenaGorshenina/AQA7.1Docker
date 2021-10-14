@@ -3,7 +3,7 @@ services:
   db:
     image: postgres
     ports:
-      - '3306:3306'
+      - '8080:8080'
     volumes:
       - ./data:/var/lib/postgres
     environment:
