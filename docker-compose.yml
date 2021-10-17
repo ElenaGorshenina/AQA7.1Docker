@@ -3,11 +3,11 @@ services:
   db:
     image: postgres
     ports:
-      - '8080:8080'
+      - '3306:3306'
     volumes:
       - ./data:/var/lib/postgres
     environment:
-      - MYSQL_RANDOM_ROOT_PASSWORD=yes
-      - MYSQL_DATABASE=app
-      - MYSQL_USER=app
-      - MYSQL_PASSWORD=9mREsvXDs9Gk89Ef
+      - POSTGRES_RANDOM_ROOT_PASSWORD=yes
+      - POSTGRES_DATABASE=db-api
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
