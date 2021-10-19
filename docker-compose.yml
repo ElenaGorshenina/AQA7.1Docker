@@ -7,7 +7,6 @@ services:
     volumes:
       - ./data:/var/lib/postgres
     environment:
-      - POSTGRES_RANDOM_ROOT_PASSWORD=yes
-      - POSTGRES_DATABASE=aqa71docker_db_1
+      - POSTGRES_DB=db-api
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=9mREsvXDs9Gk89Ef
